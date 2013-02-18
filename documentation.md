@@ -5,7 +5,7 @@
     - [Overview](/curl/overview)
     - [Dispatcher](/curl/dispatcher)
     - [Session](/curl/session)
-    - [Response] (/curl/response)
+    - [Response](/curl/response)
 - Milieu
     - [Overview](/milieu/overview)
     - [Environment](/milieu/environment)
