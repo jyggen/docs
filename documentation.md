@@ -5,10 +5,11 @@
     - [Overview](/curl/overview)
     - [Dispatcher](/curl/dispatcher)
     - [Session](/curl/session)
+    - [Response] (/curl/response)
 - Milieu
     - [Overview](/milieu/overview)
-    - [Config](/milieu/config)
     - [Environment](/milieu/environment)
+    - [Config](/milieu/config)
     - [Device](/milieu/device)
 - YoutubeThumb
     - [Overview](/youtubethumb/overview)
