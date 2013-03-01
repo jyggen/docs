@@ -32,7 +32,7 @@ This section will cover the usage of the static helpers. Curl was created with s
     Curl::post();
     Curl::delete();
 
-If you request one URL the helper(s) will return a `Response` object, while if you request multiple URLs you'll get an array of objects. For more information about `Response`, [read its documentation](/curl/response).
+If you request a single URL the helper will return a `Response` object, and if you request multiple URLs you'll get an array of objects. For more information about `Response`, [read its documentation](/curl/response).
 
     // Single URL
     var_dump(Curl::get('http://example.com/'));
@@ -56,4 +56,3 @@ If you request one URL the helper(s) will return a `Response` object, while if y
             ...
         }
     )
-
