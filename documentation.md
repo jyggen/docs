@@ -3,8 +3,8 @@
     - [Contributing](/contributing)
 - Curl
     - [Overview](/curl/overview)
-    - [Session](/curl/session)
     - [Dispatcher](/curl/dispatcher)
+    - [Request](/curl/request)
     - [Response](/curl/response)
 - Milieu
     - [Overview](/milieu/overview)

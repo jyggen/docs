@@ -71,5 +71,5 @@ That's pretty much all there is to know about the static helpers. For more advan
 
 - [Dispatcher](/curl/dispatcher)
 - [HeaderBag](/curl/headerbag)
+- [Request](/curl/request)
 - [Response](/curl/response)
-- [Session](/curl/session)
