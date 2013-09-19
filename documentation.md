@@ -11,6 +11,12 @@
     - [Environment](/milieu/environment)
     - [Config](/milieu/config)
     - [Device](/milieu/device)
+- Persona
+    - [Overview](/persona/overview)
+    - [Verifier](/persona/verifier)
+    - [Identity](/persona/identity)
+    - Framework Integration
+      - [Laravel](/persona/laravel)
 - YoutubeThumb
     - [Overview](/youtubethumb/overview)
     - [Thumb](/youtubethumb/thumb)
