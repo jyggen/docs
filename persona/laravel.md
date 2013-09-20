@@ -82,3 +82,5 @@ A basic implementation using Eloquent:
         $user->save();
         return $user;
     });
+
+If you're not using `Illuminate\Auth\UserInterface` in your system you could create a new `Mozilla\Persona\Provider\Laravel\PersonaUser` object (or `persona.user` through the IoC) with an array of the user's data as the only argument and return that.
