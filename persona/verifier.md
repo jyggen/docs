@@ -1,4 +1,4 @@
-# Overview
+# Verifier
 
 - [Introduction](#introduction)
 - [Public API](#public-api)

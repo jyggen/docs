@@ -1,4 +1,4 @@
-# Overview
+# Laravel
 
 - [Introduction](#introduction)
 - [Installation](#installation)
@@ -66,7 +66,7 @@ The library fire two events during the login process, `persona.login` and `perso
 
 The first event, `persona.login` or `EVENT_LOGIN`, is fired when we're trying to find a user. It passes one parameter to the method, the email address that identifies the current user. Your subscriber is expected to return either `null`, if no user where found, or an instance of `Illuminate\Auth\UserInterface` if one was.
 
-A basic implementation using Eloquent would look like this. Please note that the object you return (whether you're using Eloquent or not) must implement `Illuminate\Auth\UserInterface`  and `getAuthIdentifier()` must return the user's email address.
+A basic implementation using Eloquent would look like this. **Please note** that the object you return (whether you're using Eloquent or not) must implement `Illuminate\Auth\UserInterface`  and `getAuthIdentifier()` must return the user's email address.
 
     Event::listen('persona.login', function($email) {
         return User::where('email', $email)->first();
