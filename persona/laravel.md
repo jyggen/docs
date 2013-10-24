@@ -13,7 +13,7 @@ This library comes packaged with a service provider and an authentication driver
 <a name="installation"></a>
 ## Installation
 
-Install it like any other package and after you've done a `composer update` you'll have to add the library's service provider (`Mozilla\Persona\Provider\Laravel\PersonaServiceProvider`) to the end of the providers array in `app/config/app.php`:
+Install it like any other package and after you've done a `composer update` you'll have to add the library's service provider (`Jyggen\Persona\Provider\Laravel\PersonaServiceProvider`) to the end of the providers array in `app/config/app.php`:
 
     'providers' => array(
 
@@ -22,7 +22,7 @@ Install it like any other package and after you've done a `composer update` you'
         ...
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
-        'Mozilla\Persona\Provider\Laravel\PersonaServiceProvider'
+        'Jyggen\Persona\Provider\Laravel\PersonaServiceProvider'
 
     ),
 
@@ -57,9 +57,9 @@ If a user doesn't exist it will go on and create one for you through a simple in
 
 As you can imagine this is quite limited. What if you want to send a email during creation? Or maybe use your [Eloquent model](http://laravel.com/docs/eloquent) instead? This is where Laravel's event system come in handy.
 
-The library fire two events during the login process, `persona.login` and `persona.register`, that you can use to override the default functionality. If you want to future-proof your application you may use the constants defined in `Mozilla\Persona\Provider\Laravel\PersonaUserProvider`.
+The library fire two events during the login process, `persona.login` and `persona.register`, that you can use to override the default functionality. If you want to future-proof your application you may use the constants defined in `Jyggen\Persona\Provider\Laravel\PersonaUserProvider`.
 
-    use Mozilla\Persona\Provider\Laravel\PersonaUserProvider;
+    use Jyggen\Persona\Provider\Laravel\PersonaUserProvider;
 
     Event::listen(PersonaUserProvider::EVENT_LOGIN, function($email) { });
     Event::listen(PersonaUserProvider::EVENT_REGISTER, function($email) { });
@@ -83,4 +83,4 @@ A basic implementation using Eloquent:
         return $user;
     });
 
-If you're not using `Illuminate\Auth\UserInterface` in your system you could create a new `Mozilla\Persona\Provider\Laravel\PersonaUser` object (or `persona.user` through the IoC) with an array of the user's data as the only argument and return that.
+If you're not using `Illuminate\Auth\UserInterface` in your system you could create a new `Jyggen\Persona\Provider\Laravel\PersonaUser` object (or `persona.user` through the IoC) with an array of the user's data as the only argument and return that.

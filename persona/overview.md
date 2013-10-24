@@ -15,8 +15,8 @@ This library is a framework agnostic implementation of Mozilla Persona, the cros
 As with any Composer package, you must first include Composer's autoloader. It's also a good idea to alias/import the namespaces for quicker usage.
 
     require 'vendor/autoload.php';
-    use Mozilla\Persona\Identity;
-    use Mozilla\Persona\Verifier;
+    use Jyggen\Persona\Identity;
+    use Jyggen\Persona\Verifier;
 
 <a name="usage"></a>
 ## Usage
