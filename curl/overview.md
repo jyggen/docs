@@ -16,7 +16,7 @@ Curl is simple and lightweight cURL library with support for multiple requests i
 As with any Composer package, you must first include Composer's autoloader. If you plan to use the static helper it's recommended to import the namespace for quicker usage.
 
     require 'vendor/autoload.php';
-    use jyggen\Curl;
+    use Jyggen\Curl\Curl;
 
 <a name="configuration"></a>
 ## Configuration
@@ -39,7 +39,7 @@ If you request a single URL the helper will return a `Response` object, and if y
     var_dump(Curl::get('http://example.com/'));
 
     // Will output something like:
-    class jyggen\Curl\Response#5 (6) {
+    class Jyggen\Curl\Response#5 (6) {
         ...
     }
 
@@ -49,11 +49,11 @@ If you request a single URL the helper will return a `Response` object, and if y
     // Will output something like:
     array(2) {
         [0] =>
-        class jyggen\Curl\Response#7 (6) {
+        class Jyggen\Curl\Response#7 (6) {
             ...
         }
         [1] =>
-        class jyggen\Curl\Response#9 (6) {
+        class Jyggen\Curl\Response#9 (6) {
             ...
         }
     )
